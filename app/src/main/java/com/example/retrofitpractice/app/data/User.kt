@@ -1,4 +1,4 @@
-package com.example.retrofitpractice.app
+package com.example.retrofitpractice.app.data
 
 data class User(
 val id: Int,

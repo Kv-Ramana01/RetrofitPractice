@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.retrofitpractice.ui.theme.RetrofitPracticeTheme
+import com.example.retrofitpractice.app.presentation.UserDetailScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             RetrofitPracticeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    UserDetailScreen(userId = 1)
                 }
             }
         }
@@ -45,3 +43,4 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+

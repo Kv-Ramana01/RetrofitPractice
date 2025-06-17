@@ -1,4 +1,4 @@
-package com.example.retrofitpractice.app
+package com.example.retrofitpractice.app.data
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
